@@ -1,0 +1,31 @@
+{
+    "name": "hindes/sage-woocommerce",
+    "description": "WooCommerce support for Sage 10 theme",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Hindes\\SageWoocommerce\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jackson Hindes",
+            "email": "hindesj84@my.sunyulster.edu"
+        }
+    ],
+    "require": {
+        "roots/acorn": "^2.1"
+    },
+    "archive":{
+        "exclude": [
+            ".gitignore"
+        ]
+    },
+    "extra": {
+        "acorn":{
+            "providers":[
+                "Hindes\\Sage\\WooCommerce\\WooCommerceServiceProvider"
+            ]
+        }
+    }
+}
